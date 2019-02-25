@@ -7,10 +7,8 @@
 <h1>First Web Project - Pemrograman Web Dasar</h1>
 Tugas Pembuatan Web tanpa Menggunakan Bootstrap
 <br>
-<ul>
-  <li>Portofolio</li>
-  <li>Quiz</li>
-</ul>
+ Quiz for kids with Modal and Javascript 
+
 <br><br><br>
 edited by https://arifpujin.com
 email : <a href="mailto:arifpujinugroho@gmail.com" target="_blank">arifpujinugroho@gmail.com</a>
