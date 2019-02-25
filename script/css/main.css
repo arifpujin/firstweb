@@ -1,0 +1,442 @@
+	* {	margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	header,section {
+		display: block;
+	}
+	
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	html,body {
+		height: 100%;
+		background-image: url('../../image/bg.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+		line-height: 1;
+		background-size: 100%
+
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+	
+	body{
+		color: #414f57;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 14pt;
+		font-weight: 300;
+		line-height: 2;
+		letter-spacing: 0.3em;
+	}
+	.judul{
+		font-size: 25px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+ 	#badan {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		position: relative;
+		min-height: 100%;
+		padding: 1.5em;
+		z-index: 2;
+	}
+
+	#badan > * {
+		z-index: 1;
+	}
+
+	#badan:before {
+		content: '';
+		display: block;
+	}
+
+	.isi-tengah {
+		background-color: #00a5ff;
+		position: relative;
+		max-width: 100%;
+		min-width: 27em;
+		padding: 4.5em 3em 3em 3em;
+		border-radius: 10px;
+		text-align: center;
+		right: 220px;
+		top: -25px;
+		border: 5px solid white;
+	}
+
+	.isi-tengah .foto {
+		position: relative;
+		display: block;
+		margin-bottom: 1.5em;
+	}
+
+	.isi-tengah .foto img {
+		display: block;
+		margin: 0 auto;
+		border-radius: 100%;
+		box-shadow: 0 0 0 3px #fff;
+	}
+
+	.isi-tengah .foto:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: -3em;
+		width: calc(100% + 6em);
+		height: 2px;
+		z-index: -1;
+		background: #c8cccf;
+	}
+
+	a{
+		height: 8vmin;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 2.75em;
+		padding: 1em;
+		color: black;
+		background-color: #eaeaea;
+		border-radius: 4px;
+		border: solid 1px #c8cccf;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		background-color: #5d5d5d;
+		color: white;
+		transition: 1s
+	}
+
+	.texttengah{
+		text-align: center;
+	}
+
+	.tooltip {
+    	position: relative;
+    	display: inline-block;
+	}
+
+	.tooltip .tooltiptext {
+   		visibility: hidden;
+ 		width: 120px;
+    	background-color: black;
+    	color: #fff;
+    	text-align: center;
+    	font-size: 5pt;
+    	text-transform: uppercase;
+    	border-radius: 6px;
+    	padding: 5px 0;
+    	position: absolute;
+    	z-index: 1;
+   		top: 150%;
+    	left: 50%;
+    	margin-left: -60px;
+	}
+
+	.tooltip .tooltiptext::after {
+   		content: "";
+   		position: absolute;
+    	bottom: 100%;
+    	left: 50%;
+    	margin-left: -5px;
+    	border-width: 5px;
+    	border-style: solid;
+    	border-color: transparent transparent black transparent;
+	}
+
+	.tooltip:hover .tooltiptext {
+    	visibility: visible;
+	}
+
+	::-webkit-scrollbar {
+    	width: 10px;
+	}
+ 
+	::-webkit-scrollbar-track {     
+    	background: #c1c1c1;    
+	}
+ 
+	::-webkit-scrollbar-thumb {
+    	background: #8c8c8c;
+    	border-radius: 15px;
+	}	
+	
+
+	}
+	.butama {
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color: #fff;
+		padding: 1em;
+		max-width: 80%;
+		margin: auto;
+		position: relative;
+		opacity: 0.7;
+		cursor: default;
+	}
+
+	.butama:hover{
+		transition: 3s;
+		background-color: transparent;
+
+	}
+
+	.kolom-tengah{
+		text-align: center;
+		padding: 1.1em;
+		border-radius: 10px;
+	}
+
+	.kolom-tengah:hover{
+		border: 1.3px solid black;
+		transition: 2.5s;
+		border-radius: 15px;
+		background-color: lightgray;
+		color: black;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.kolom1{
+		position: relative;
+		display: inline-block;
+		margin-left: 2%;
+
+	}
+	.kolom1:hover{
+		border-color: 1px solid gray;
+		background-color: gray;
+		border-radius: 5px;
+		color: white;
+		padding: 1em;
+		transition: 2s;
+		cursor: pointer;
+	}
+
+	.kolom2{
+		position: relative;
+		margin-left: 45%;
+		margin-right: 5%;
+
+	}
+
+	.kolom2:hover{
+		border-color: 1px solid gray;
+		background-color: gray;
+		border-radius: 5px;
+		color: white;
+		padding: 1em;
+		transition: 2s;
+		cursor: pointer;
+	}
+
+	.kolombawah{
+		position: relative;
+		margin: auto;
+		margin-left: 10%;
+		margin-bottom: 1%; 
+	}
+.kolombawah:hover{
+	color: #000000
+}
+.tomkem {
+    position: relative;
+    top: 4vmin;
+    left: 23vmin;
+}
+
+
+/*tambahan*/
+.masukmateri {
+	margin-top: 2%; 
+	font-size: 50%;
+}
+.tengah{
+	text-align: center;
+}
+.f100{
+	font-size: 150%;
+}
+.menu {
+	font-size: 150%;
+	border: 2px solid white;
+	width: 250px;
+	margin:auto; 
+	background: #A4D563;
+	color: black;
+}
+.wdhsoal {
+	font-size: 5vmin;
+	border: 5px solid #e7ff00;
+	width: 89vmin;
+	position: relative;
+	margin: 25px;
+	float: left;
+	border-radius: 100px;
+
+	right: -5vmin;
+	background-color: #9dda91;
+}
+
+.wdhhasil {
+	font-size: 2vmin;
+	border: 5px solid white;
+	width: 105vmin;
+	position: relative;
+	float: left;
+	left: 25%;
+}
+
+.soalnya {
+	padding: 7px;
+}
+
+.inputan {
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 20px;
+	width: 49vmin;
+	position: relative;
+	text-align: center;
+	color: #ff3f00;
+	right: -1vmin;
+	border-radius: 10px;
+}
+/* */
+.btn {
+  background: #f00;
+  border: #e06666 solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+}
+.btn:hover {
+  background-color: #d7d7d7;
+  border: #d7d7d7 solid 1px;
+  color: #f00;
+}
+.btn.btn-big {
+  font-size: 18px;
+  padding: 15px 20px;
+  min-width: 100px;
+}
+.btn-close {
+  color: #aaaaaa;
+  font-size: 11px;
+  text-decoration: none;
+  position: absolute;
+  top: 3px;
+  cursor: pointer;
+  right: 5px;
+  padding: 10px 8px !important;
+}
+
+.btn-close:hover {
+  color: #fff;
+  background-color: #000;
+}
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.modal:target:before {
+  display: block;
+}
+.modal:target .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #333333 solid 2px;
+  border-radius: 5px;
+  margin-left: -50vmin;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 100vmin;
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+.modal-header {
+	background-color: #c1ffc6;
+}
+.modal-header h2 {
+  font-size: 20px;
+}
+.modal-footer {
+  text-align: right;
+}
+.merah{
+	color: #f00;
+}
+.putih{
+	color: #fff;
+}
+.hijau{
+	color: #8CC63E;
+}
+.hijau-hov:hover{
+	color :#fff;
+	background-color: #8CC63E;
+}
+.hitam{
+	color: #000000
+}
